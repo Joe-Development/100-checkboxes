@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-gap: 5px;
+  position: relative; 
+}
+
+.checkbox {
+  width: 40px;
+  height: 40px;
+  appearance: none;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.checkbox:checked {
+  background-color: rgb(114, 152, 255); 
+  border: 2px solid rgb(114, 152, 255);
+}
+
+
+.total-checks {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.total-checks-num {
+  color: #0078d4; 
+}
